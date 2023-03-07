@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function Check(){
+        var a = document.getElementById("username").value;
+        var b =document.getElementById("password").value;
+        if(a=="Dương Thu Hà"&&b=="12012002"){
+            window.location="page.html";
+        }
+        else{
+            alert("Tài khoản không đúng hãy liên hệ Đại Bàng");
+        }
+    }
+  </script>
+</head>
+<body>
+    <section onsubmit="return Check()">
+        <div class="form-box">
+            <div class="form-value">
+                <form action="">
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="text" required id="username">
+                        <label for="">Name</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required id="password">
+                        <label for="">Password</label>
+                    </div>
+                    <input type="button" name="button" id="button" value="Log in" onclick="Check()">
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
